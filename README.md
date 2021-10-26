@@ -1,27 +1,40 @@
-# Paylink
+# Paylink Technical Test
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
+## FizzBuzz
 
-## Development server
+Create a loop that will print all the numbers for the range, 1-20. If the number is:
+• divisible by 3, print 'Fizz'
+• divisible by 5, print 'Buzz'
+• divisible by 3 & 5, 'FizzBuzz'
+• otherwise print the number
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Fibonacci
+Write a method in Angular, to obtain a given Fibonacci number (n): fibonacci(5);
+fibonacci(10);
+fibonacci(1);
 
-## Code scaffolding
+## MagicGetterSetter
+Create a 'MagicGetterSetter' class/trait/interface. It's functionality should include;
+• 'magic get' will go to a 'get' method containing the property, or throw an exception
+• 'magic set' will go to a 'set' method containing the property, or throw an exception
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Notes
 
-## Build
+**When to use interfaces:**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- You only need the definition for the server data without introducing additional overhead for the final output.
+- You only need to transmit data without any behaviors or logic (constructor initialization, methods)
+- You do not instantiate/create objects from your interface very often
+- * Using simple object-literal notationlet instance: FooInterface = { ... };, you risk having semi-instances all over the place.
+- * That doesn't enforce the constraints given by a class ( constructor or initialization logic, validation, encapsulation of private fields...Etc)
+- * You need to define contracts/configurations for your systems (global configurations)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**When to use classes:**
 
-## Running end-to-end tests
+- You instantiate your class and change the instances state over time.
+- Instances of your class will need methods to query or mutate its state
+- When you want to associate behaviors with data more closely;
+- You enforce constraints on the creation of your instaces.
+- If you only write a bunch of properties assignments in your class, you might consider using a type instead.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
