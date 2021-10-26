@@ -1,0 +1,13 @@
+<mat-card>
+  <section>
+    <mat-card-title>Fibonacci</mat-card-title>
+  </section>
+  <div class="button-row">
+    <button mat-flat-button color="primary" (click)="calcFibonacci(1)">Fibonacci(1)</button>
+    <button mat-flat-button color="accent" (click)="calcFibonacci(5)">Fibonacci(5)</button>
+    <button mat-flat-button color="warn" (click)="calcFibonacci(10)">Fibonacci(10)</button>
+  </div>
+  <section>
+    {{ fibResult }}
+  </section>
+</mat-card>

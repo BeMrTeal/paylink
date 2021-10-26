@@ -1,0 +1,30 @@
+<mat-card>
+  <section>
+    <mat-card-title>Fizz Buzz</mat-card-title>
+  </section>
+  <section>
+    <button mat-flat-button color="primary" type="button" (click)="onClick(20)">
+      Process 1-20
+    </button>
+  </section>
+  <section>
+    <mat-card-content>
+      <p>Result:</p>
+      <ul>
+        <li *ngFor="let res of checkNumber; index as i">
+          <ng-container *ngIf="(i + 1) % 15 == 0 else Fizz">FizzBuzz </ng-container>
+
+          <ng-template #Fizz>
+            <ng-container *ngIf="(i + 1) % 3 == 0 else Buzz">Fizz </ng-container>
+          </ng-template>
+          <ng-template #Buzz>
+            <ng-container *ngIf="(i + 1) % 5 == 0 else theNumber">Buzz </ng-container>
+            <ng-template #theNumber>
+              {{ i + 1 }}
+            </ng-template>
+          </ng-template>
+        </li>
+      </ul>
+    </mat-card-content>
+  </section>
+</mat-card>

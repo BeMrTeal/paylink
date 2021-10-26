@@ -1,0 +1,12 @@
+<mat-card>
+  <section>
+    <mat-card-title>Magic Getter and Setter</mat-card-title>
+  </section>
+  <form>
+    <mat-form-field appearance="fill">
+      <mat-label>Please type your name:</mat-label>
+      <input matInput type="text" name="new" [(ngModel)]="newName">
+    </mat-form-field>
+  </form>
+  <p>{{ newName }}</p>
+</mat-card>
