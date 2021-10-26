@@ -1,5 +1,6 @@
 # Paylink Technical Test
 
+
 ## FizzBuzz
 
 Create a loop that will print all the numbers for the range, 1-20. If the number is:
@@ -19,6 +20,11 @@ Create a 'MagicGetterSetter' class/trait/interface. It's functionality should in
 • 'magic set' will go to a 'set' method containing the property, or throw an exception
 
 ### Notes
+
+My approach to code is to always try to find the simplest solution to a problem in any case.
+The Fizz Buzz problem is just to check if I know the module % operator and I came up with a simple solution that would show the result in the front-end.
+The Fibonacci problem the way it is presented is a bit dubious as it asks me for the Fibonacci(n) but requests only 1, 5 and 10 so I created a generic function that will take any value but used buttons with set values in a way to get the final result.
+Finally, the Magic Getter Setter presents itself as something quite difficult when if you go to the definitions of Classes and Interfaces in angular it is clear that a class needs to be used. From that, I again used the simplest approach to create the class and from that it is easily instantiatable.
 
 **When to use interfaces:**
 
