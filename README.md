@@ -25,9 +25,9 @@ Create a 'MagicGetterSetter' class/trait/interface. It's functionality should in
 - You only need the definition for the server data without introducing additional overhead for the final output.
 - You only need to transmit data without any behaviors or logic (constructor initialization, methods)
 - You do not instantiate/create objects from your interface very often
-- * Using simple object-literal notationlet instance: FooInterface = { ... };, you risk having semi-instances all over the place.
-- * That doesn't enforce the constraints given by a class ( constructor or initialization logic, validation, encapsulation of private fields...Etc)
-- * You need to define contracts/configurations for your systems (global configurations)
+ * Using simple object-literal notationlet instance: FooInterface = { ... };, you risk having semi-instances all over the place.
+ * That doesn't enforce the constraints given by a class ( constructor or initialization logic, validation, encapsulation of private fields...Etc)
+ * You need to define contracts/configurations for your systems (global configurations)
 
 
 **When to use classes:**
